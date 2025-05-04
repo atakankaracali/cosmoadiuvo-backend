@@ -9,57 +9,59 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("🌕 CosmoAdiuvo Real Moon Calendar API is live!");
+  res.send("🌕 CosmoAdiuvo Moon Calendar API is live!");
 });
 
 app.get("/moon-calendar", async (req, res) => {
   const { year, month } = req.query;
 
-  const currentYear = new Date().getFullYear();
-  const y = parseInt(year) || currentYear;
+  const y = parseInt(year) || new Date().getFullYear();
   const m = parseInt(month) || new Date().getMonth() + 1;
 
+  const startDate = `${y}-${String(m).padStart(2, "0")}-01`;
   const daysInMonth = new Date(y, m, 0).getDate();
-  const results = [];
+  const endDate = `${y}-${String(m).padStart(2, "0")}-${daysInMonth}`;
 
-  for (let day = 1; day <= daysInMonth; day++) {
-    const dateStr = `${y}-${String(m).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-    const url = `https://api.met.no/weatherapi/sunrise/2.0/.json?lat=56.95&lon=24.1&date=${dateStr}&offset=+03:00`;
+  console.log(`📡 Fetching Moon Phase from Open-Meteo: ${startDate} to ${endDate}`);
 
-    try {
-      const response = await fetch(url, {
-        headers: {
-          "User-Agent": "cosmoadiuvo/1.0",
-        },
-      });
-      const data = await response.json();
-      const moonphase = data?.location?.time?.[0]?.moonphase?.value;
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=56.95&longitude=24.1&daily=moon_phase&timezone=Europe/Riga&start_date=${startDate}&end_date=${endDate}`;
 
-      if (moonphase !== undefined) {
-        results.push({
-          date: dateStr,
-          phase: {
-            name: getPhaseName(parseFloat(moonphase)),
-            value: parseFloat(moonphase),
-          },
-        });
-      }
-    } catch (error) {
-      console.error(`❌ Error fetching data for ${dateStr}`, error.message || error);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    console.log("📦 Open-Meteo response:", JSON.stringify(data, null, 2));
+
+    if (!data.daily || !data.daily.time || !data.daily.moon_phase) {
+      throw new Error("Incomplete moon data from API");
     }
-  }
 
-  res.json({ calendar: results });
+    const calendar = data.daily.time.map((date, idx) => {
+      const value = data.daily.moon_phase[idx];
+      return {
+        date,
+        phase: {
+          name: getPhaseName(value),
+          value,
+        },
+      };
+    });
+
+    res.json({ calendar });
+  } catch (error) {
+    console.error("💥 Moon API error:", error);
+    res.status(500).json({ error: "Moon data fetch failed", details: error.message || error });
+  }
 });
 
 function getPhaseName(value) {
-  if (value === 0) return "New Moon";
-  if (value > 0 && value < 0.25) return "Waxing Crescent";
-  if (value === 0.25) return "First Quarter";
-  if (value > 0.25 && value < 0.5) return "Waxing Gibbous";
-  if (value === 0.5) return "Full Moon";
-  if (value > 0.5 && value < 0.75) return "Waning Gibbous";
-  if (value === 0.75) return "Last Quarter";
+  if (value < 0.03 || value > 0.97) return "New Moon";
+  if (value < 0.22) return "Waxing Crescent";
+  if (value < 0.28) return "First Quarter";
+  if (value < 0.47) return "Waxing Gibbous";
+  if (value < 0.53) return "Full Moon";
+  if (value < 0.72) return "Waning Gibbous";
+  if (value < 0.78) return "Last Quarter";
   return "Waning Crescent";
 }
 
