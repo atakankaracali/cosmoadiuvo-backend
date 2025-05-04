@@ -15,30 +15,33 @@ app.get("/", (req, res) => {
 });
 
 app.get("/moon-calendar", async (req, res) => {
-  const year = req.query.year || new Date().getFullYear();
-  const month = req.query.month || String(new Date().getMonth() + 1).padStart(2, "0");
-
-  const credentials = `${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`;
-  const authHeader = `Basic ${Buffer.from(credentials).toString("base64")}`;
-
-  const url = `https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`;
+  const today = new Date();
+  const year = req.query.year || today.getFullYear();
+  const month = String(req.query.month || today.getMonth() + 1).padStart(2, "0");
 
   console.log(`📡 Fetching Moon Calendar for: ${year}-${month}`);
   console.log(`🔐 Using credentials: ${process.env.ASTRONOMY_APP_ID} / [HIDDEN]`);
 
+  const credentials = `${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`;
+  const encoded = Buffer.from(credentials).toString("base64");
+  const apiUrl = `https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`;
+
   try {
-    const response = await fetch(url, {
+    const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": authHeader,
+        "Authorization": `Basic ${encoded}`
       },
     });
 
-    const data = await response.json();
-    console.log("📦 Raw response from AstronomyAPI:", JSON.stringify(data, null, 2));
+    const raw = await response.text();
+    console.log("📦 Raw response from AstronomyAPI:", raw);
+
+    const data = JSON.parse(raw);
 
     if (!data?.data?.calendar) {
+      console.error("❌ API response does not contain 'data.calendar'.");
       throw new Error("No moon data from AstronomyAPI");
     }
 
@@ -47,7 +50,7 @@ app.get("/moon-calendar", async (req, res) => {
       image: day.image?.url,
       phase: {
         name: day.phase.name,
-        svg: day.svg?.url || "",
+        svg: day.svg?.image
       }
     }));
 
