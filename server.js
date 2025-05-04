@@ -18,36 +18,37 @@ app.get("/moon-calendar", async (req, res) => {
   const year = req.query.year || new Date().getFullYear();
   const month = req.query.month || String(new Date().getMonth() + 1).padStart(2, "0");
 
+  const credentials = `${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`;
+  const authHeader = `Basic ${Buffer.from(credentials).toString("base64")}`;
+
   const url = `https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`;
 
-  try {
-    console.log(`📡 Fetching Moon Calendar for: ${year}-${month}`);
-    console.log(`🔐 Using credentials: ${process.env.ASTRONOMY_APP_ID} / ${process.env.ASTRONOMY_APP_SECRET}`);
+  console.log(`📡 Fetching Moon Calendar for: ${year}-${month}`);
+  console.log(`🔐 Using credentials: ${process.env.ASTRONOMY_APP_ID} / [HIDDEN]`);
 
+  try {
     const response = await fetch(url, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${Buffer.from(`${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`).toString("base64")}`
+        "Authorization": authHeader,
       },
     });
 
     const data = await response.json();
-    console.log("📦 Raw response from AstronomyAPI:");
-    console.dir(data, { depth: null });
+    console.log("📦 Raw response from AstronomyAPI:", JSON.stringify(data, null, 2));
 
     if (!data?.data?.calendar) {
-      console.error("❌ API response does not contain 'data.calendar'.");
       throw new Error("No moon data from AstronomyAPI");
     }
 
     const calendar = data.data.calendar.map(day => ({
       date: day.date,
+      image: day.image?.url,
       phase: {
         name: day.phase.name,
-        svg: day.svg,
-      },
-      image: day.image?.url || null
+        svg: day.svg?.url || "",
+      }
     }));
 
     res.json({ calendar });
