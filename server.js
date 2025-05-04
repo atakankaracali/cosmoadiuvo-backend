@@ -1,5 +1,8 @@
 import express from "express";
 import cors from "cors";
+import fetch from "node-fetch";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,43 +15,37 @@ app.get("/", (req, res) => {
 });
 
 app.get("/moon-calendar", async (req, res) => {
-  const year = parseInt(req.query.year) || new Date().getFullYear();
-  const month = parseInt(req.query.month) || new Date().getMonth() + 1;
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
 
-  if (month < 1 || month > 12) {
-    return res.status(400).json({ error: "Invalid month" });
-  }
-
-  const daysInMonth = new Date(year, month, 0).getDate();
-
-  const calendar = [];
-
-  for (let i = 1; i <= daysInMonth; i++) {
-    const date = `${year}-${String(month).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
-    const phaseValue = (i / daysInMonth) % 1;
-    calendar.push({
-      date,
-      phase: {
-        name: getPhaseName(phaseValue),
-        value: phaseValue.toFixed(2),
-      }
+  try {
+    const response = await fetch(`https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${Buffer.from(`${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`).toString("base64")}`
+      },
     });
+
+    const data = await response.json();
+
+    if (!data?.data?.calendar) {
+      throw new Error("No moon data from AstronomyAPI");
+    }
+
+    const calendar = data.data.calendar.map(day => ({
+      date: day.date,
+      image: day.image?.url,
+      phase: { name: day.phase.name }
+    }));
+
+    res.json({ calendar });
+  } catch (error) {
+    console.error("Moon API error:", error);
+    res.status(500).json({ error: "Moon data fetch failed", details: error.message || error });
   }
-
-  res.json({ calendar });
 });
-
-function getPhaseName(value) {
-  value = Number(value);
-  if (value < 0.03 || value > 0.97) return "New Moon";
-  if (value < 0.22) return "Waxing Crescent";
-  if (value < 0.28) return "First Quarter";
-  if (value < 0.47) return "Waxing Gibbous";
-  if (value < 0.53) return "Full Moon";
-  if (value < 0.72) return "Waning Gibbous";
-  if (value < 0.78) return "Last Quarter";
-  return "Waning Crescent";
-}
 
 app.listen(PORT, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
