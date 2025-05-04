@@ -1,54 +1,41 @@
-const express = require("express");
-const axios = require("axios");
-const cors = require("cors");
-require("dotenv").config();
+import express from "express";
+import fetch from "node-fetch";
+import cors from "cors";
+import dotenv from "dotenv";
 
+dotenv.config();
 const app = express();
+const PORT = process.env.PORT || 3000;
+
 app.use(cors());
+app.use(express.json());
 
-app.get("/api/moon-phases", async (req, res) => {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = (now.getMonth() + 1).toString().padStart(2, "0");
+app.get("/", (req, res) => {
+  res.send("CosmoAdiuvo Moon Calendar API is running ✅");
+});
 
-  const from = `${year}-${month}-01`;
-  const to = `${year}-${month}-31`;
+app.get("/moon-calendar", async (req, res) => {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
 
-  try {
-    const response = await axios.post(
-      "https://api.astronomyapi.com/api/v2/studio/moon-phase/calendar",
-      {
-        style: "sketch",
-        format: "png",
-        observer: {
-          latitude: 56.95,
-          longitude: 24.1,
-          date: from
-        },
-        view: {
-          type: "calendar",
-          date: {
-            from,
-            to
-          }
-        }
-      },
-      {
-        headers: {
-          "Authorization": `Basic ${Buffer.from(
-            `${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`
-          ).toString("base64")}`,
-          "Content-Type": "application/json"
-        }
-      }
-    );
+  const response = await fetch(`https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Basic ${Buffer.from(`${process.env.ASTRONOMY_API_ID}:${process.env.ASTRONOMY_API_SECRET}`).toString("base64")}`
+    },
+  });
 
-    res.json(response.data.data);
-  } catch (error) {
-    console.error("Error fetching moon phase data:", error.response?.data || error.message);
-    res.status(500).json({ error: "Failed to fetch moon phase data" });
+  const data = await response.json();
+
+  if (response.ok) {
+    res.json(data.data);
+  } else {
+    res.status(500).json({ error: "Failed to fetch moon data", details: data });
   }
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Moon backend running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
