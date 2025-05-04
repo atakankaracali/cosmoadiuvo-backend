@@ -1,8 +1,6 @@
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
-import dotenv from "dotenv";
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,44 +13,38 @@ app.get("/", (req, res) => {
 });
 
 app.get("/moon-calendar", async (req, res) => {
+  const queryYear = parseInt(req.query.year);
+  const queryMonth = parseInt(req.query.month);
+
   const today = new Date();
-  const year = req.query.year || today.getFullYear();
-  const month = String(req.query.month || today.getMonth() + 1).padStart(2, "0");
+  const year = !isNaN(queryYear) ? queryYear : today.getFullYear();
+  const month = !isNaN(queryMonth) && queryMonth >= 1 && queryMonth <= 12 ? queryMonth : today.getMonth() + 1;
 
-  console.log(`📡 Fetching Moon Calendar for: ${year}-${month}`);
-  console.log(`🔐 Using credentials: ${process.env.ASTRONOMY_APP_ID} / [HIDDEN]`);
+  const monthStr = String(month).padStart(2, "0");
+  const startDate = `${year}-${monthStr}-01`;
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const endDate = `${year}-${monthStr}-${String(daysInMonth).padStart(2, "0")}`;
 
-  const credentials = `${process.env.ASTRONOMY_APP_ID}:${process.env.ASTRONOMY_APP_SECRET}`;
-  const encoded = Buffer.from(credentials).toString("base64");
-  const apiUrl = `https://api.astronomyapi.com/api/v2/studio/moon-calendar/month?latitude=56.95&longitude=24.1&month=${year}-${month}`;
+  console.log(`📡 Fetching Moon Phase from Open-Meteo: ${startDate} to ${endDate}`);
 
   try {
-    const response = await fetch(apiUrl, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Basic ${encoded}`
-      },
-    });
+    const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=56.95&longitude=24.1&daily=moon_phase&timezone=Europe/Riga&start_date=${startDate}&end_date=${endDate}`);
+    const data = await response.json();
 
-    const raw = await response.text();
-    console.log("📦 Raw response from AstronomyAPI:", raw);
-
-    const data = JSON.parse(raw);
-
-    if (!data?.data?.calendar) {
-      console.error("❌ API response does not contain 'data.calendar'.");
-      throw new Error("No moon data from AstronomyAPI");
+    if (!data.daily || !data.daily.time || !data.daily.moon_phase) {
+      throw new Error("Incomplete moon data from API");
     }
 
-    const calendar = data.data.calendar.map(day => ({
-      date: day.date,
-      image: day.image?.url,
-      phase: {
-        name: day.phase.name,
-        svg: day.svg?.image
-      }
-    }));
+    const calendar = data.daily.time.map((date, idx) => {
+      const phaseValue = data.daily.moon_phase[idx];
+      return {
+        date,
+        phase: {
+          name: getPhaseName(phaseValue),
+          value: phaseValue,
+        },
+      };
+    });
 
     res.json({ calendar });
   } catch (error) {
@@ -60,6 +52,17 @@ app.get("/moon-calendar", async (req, res) => {
     res.status(500).json({ error: "Moon data fetch failed", details: error.message || error });
   }
 });
+
+function getPhaseName(value) {
+  if (value < 0.03 || value > 0.97) return "New Moon";
+  if (value < 0.22) return "Waxing Crescent";
+  if (value < 0.28) return "First Quarter";
+  if (value < 0.47) return "Waxing Gibbous";
+  if (value < 0.53) return "Full Moon";
+  if (value < 0.72) return "Waning Gibbous";
+  if (value < 0.78) return "Last Quarter";
+  return "Waning Crescent";
+}
 
 app.listen(PORT, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
