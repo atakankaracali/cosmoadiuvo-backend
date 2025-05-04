@@ -13,23 +13,24 @@ app.get("/", (req, res) => {
 });
 
 app.get("/moon-calendar", async (req, res) => {
-  const queryYear = parseInt(req.query.year);
-  const queryMonth = parseInt(req.query.month);
+  const { year, month } = req.query;
 
-  const today = new Date();
-  const year = !isNaN(queryYear) ? queryYear : today.getFullYear();
-  const month = !isNaN(queryMonth) && queryMonth >= 1 && queryMonth <= 12 ? queryMonth : today.getMonth() + 1;
+  const y = parseInt(year || new Date().getFullYear());
+  const m = parseInt(month || new Date().getMonth() + 1);
+  const monthStr = String(m).padStart(2, "0");
 
-  const monthStr = String(month).padStart(2, "0");
-  const startDate = `${year}-${monthStr}-01`;
-  const daysInMonth = new Date(year, month, 0).getDate();
-  const endDate = `${year}-${monthStr}-${String(daysInMonth).padStart(2, "0")}`;
+  const daysInMonth = new Date(y, m, 0).getDate();
+  const startDate = `${y}-${monthStr}-01`;
+  const endDate = `${y}-${monthStr}-${daysInMonth}`;
+
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=56.95&longitude=24.1&daily=moon_phase&timezone=Europe/Riga&start_date=${startDate}&end_date=${endDate}`;
 
   console.log(`📡 Fetching Moon Phase from Open-Meteo: ${startDate} to ${endDate}`);
 
   try {
-    const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=56.95&longitude=24.1&daily=moon_phase&timezone=Europe/Riga&start_date=${startDate}&end_date=${endDate}`);
+    const response = await fetch(url);
     const data = await response.json();
+    console.log("📦 Open-Meteo response:", JSON.stringify(data, null, 2));
 
     if (!data.daily || !data.daily.time || !data.daily.moon_phase) {
       throw new Error("Incomplete moon data from API");
@@ -42,7 +43,8 @@ app.get("/moon-calendar", async (req, res) => {
         phase: {
           name: getPhaseName(phaseValue),
           value: phaseValue,
-        },
+          svg: `https://cosmoadiuvo-assets.vercel.app/moon/${getPhaseName(phaseValue).toLowerCase().replace(/ /g, "-")}.svg`
+        }
       };
     });
 
