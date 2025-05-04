@@ -29,19 +29,27 @@ app.get("/moon-calendar", async (req, res) => {
     try {
       const response = await fetch(url, {
         headers: {
-          "User-Agent": "CosmoAdiuvoMoonApp/1.0 atakan@cosmoadiuvo.com",
+          "User-Agent": "CosmoAdiuvo/1.0 (atakan@cosmoadiuvo.com)",
+          "Accept": "application/json",
         },
       });
 
+      if (!response.ok) {
+        const text = await response.text();
+        console.error(`❌ Error fetching ${dateStr}: ${response.status} ${text}`);
+        continue;
+      }
+
       const data = await response.json();
-      const phaseName = data.location.time[0]?.moonphase?.value || "Unknown";
+
+      const phaseName = data?.location?.time?.[0]?.moonphase?.value || "Unknown";
 
       results.push({
         date: dateStr,
         phase: { name: phaseName },
       });
     } catch (err) {
-      console.error(`❌ Error fetching ${dateStr}`, err.message);
+      console.error(`❌ JSON error for ${dateStr}:`, err.message);
     }
   }
 
