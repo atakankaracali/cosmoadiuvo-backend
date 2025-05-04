@@ -35,9 +35,20 @@ app.get("/moon-calendar", async (req, res) => {
     res.json({ calendar });
 });
 
-function getMoonImageURL(phaseName) {
-    const slug = phaseName.toLowerCase().replace(/ /g, "-");
-    return `https://cosmoadiuvo-assets.vercel.app/moon/${slug}.png`;
+function getPhaseName(value) {
+    if (value < 0.03 || value > 0.97) return "New Moon";
+    if (value < 0.22) return "Waxing Crescent";
+    if (value < 0.28) return "First Quarter";
+    if (value < 0.47) return "Waxing Gibbous";
+    if (value < 0.53) return "Full Moon";
+    if (value < 0.72) return "Waning Gibbous";
+    if (value < 0.78) return "Last Quarter";
+    return "Waning Crescent";
+}
+
+function getMoonImageURL(value) {
+    const phase = getPhaseName(value).toLowerCase().replace(/ /g, "-");
+    return `https://cosmoadiuvo-assets.vercel.app/moon/${phase}.png`;
 }
 
 app.listen(PORT, () => {
