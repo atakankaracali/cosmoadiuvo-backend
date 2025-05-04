@@ -15,55 +15,38 @@ app.get("/", (req, res) => {
 app.get("/moon-calendar", async (req, res) => {
   const { year, month } = req.query;
 
-  const y = parseInt(year) || new Date().getFullYear();
-  const m = parseInt(month) || new Date().getMonth() + 1;
+  const y = Number(year) || new Date().getFullYear();
+  const m = Number(month) || new Date().getMonth() + 1;
 
-  const startDate = `${y}-${String(m).padStart(2, "0")}-01`;
   const daysInMonth = new Date(y, m, 0).getDate();
-  const endDate = `${y}-${String(m).padStart(2, "0")}-${daysInMonth}`;
 
-  console.log(`📡 Fetching Moon Phase from Open-Meteo: ${startDate} to ${endDate}`);
+  const results = [];
 
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=56.95&longitude=24.1&daily=moon_phase&timezone=Europe/Riga&start_date=${startDate}&end_date=${endDate}`;
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${y}-${String(m).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+    const url = `https://api.met.no/weatherapi/sunrise/2.0/.json?lat=56.95&lon=24.1&date=${dateStr}&offset=+03:00`;
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    console.log("📦 Open-Meteo response:", JSON.stringify(data, null, 2));
-
-    if (!data.daily || !data.daily.time || !data.daily.moon_phase) {
-      throw new Error("Incomplete moon data from API");
-    }
-
-    const calendar = data.daily.time.map((date, idx) => {
-      const value = data.daily.moon_phase[idx];
-      return {
-        date,
-        phase: {
-          name: getPhaseName(value),
-          value,
+    try {
+      const response = await fetch(url, {
+        headers: {
+          "User-Agent": "CosmoAdiuvoMoonApp/1.0 atakan@cosmoadiuvo.com",
         },
-      };
-    });
+      });
 
-    res.json({ calendar });
-  } catch (error) {
-    console.error("💥 Moon API error:", error);
-    res.status(500).json({ error: "Moon data fetch failed", details: error.message || error });
+      const data = await response.json();
+      const phaseName = data.location.time[0]?.moonphase?.value || "Unknown";
+
+      results.push({
+        date: dateStr,
+        phase: { name: phaseName },
+      });
+    } catch (err) {
+      console.error(`❌ Error fetching ${dateStr}`, err.message);
+    }
   }
-});
 
-function getPhaseName(value) {
-  if (value < 0.03 || value > 0.97) return "New Moon";
-  if (value < 0.22) return "Waxing Crescent";
-  if (value < 0.28) return "First Quarter";
-  if (value < 0.47) return "Waxing Gibbous";
-  if (value < 0.53) return "Full Moon";
-  if (value < 0.72) return "Waning Gibbous";
-  if (value < 0.78) return "Last Quarter";
-  return "Waning Crescent";
-}
+  res.json({ calendar: results });
+});
 
 app.listen(PORT, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
