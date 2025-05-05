@@ -1,8 +1,9 @@
-const express = require('express');
-const axios = require('axios');
+import express from 'express';
+import axios from 'axios';
+
 const router = express.Router();
 
-const API_KEY = process.env.MOON_API_KEY || 'your_api_key_here';
+const API_KEY = process.env.MOON_API_KEY;
 const BASE_URL = 'https://api.ipgeolocation.io/astronomy';
 
 router.get('/moon', async (req, res) => {
@@ -18,8 +19,8 @@ router.get('/moon', async (req, res) => {
     });
     const data = response.data;
     res.json({
-      date: date,
-      location: location,
+      date,
+      location,
       phase: data.moon_phase,
       illumination: data.moon_illumination,
       moonrise: data.moonrise,
@@ -32,4 +33,4 @@ router.get('/moon', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
