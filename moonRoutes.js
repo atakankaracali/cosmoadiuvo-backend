@@ -27,9 +27,13 @@ router.get('/moon', async (req, res) => {
 
         const phase = data.moon_phase || 'Unknown';
         const illuminationRaw = data.moon_illumination;
-        const illumination = typeof illuminationRaw === 'string'
-            ? illuminationRaw.replace('%', '').trim()
-            : 'N/A';
+        let illumination = 'N/A';
+
+        if (typeof illuminationRaw === 'string' && illuminationRaw.includes('%')) {
+            illumination = illuminationRaw.replace('%', '').trim();
+        } else if (!isNaN(parseFloat(illuminationRaw))) {
+            illumination = parseFloat(illuminationRaw).toString();
+        }
 
         const moonrise = data.moonrise || 'N/A';
         const moonset = data.moonset || 'N/A';
