@@ -20,17 +20,25 @@ router.get('/moon', async (req, res) => {
 
         const data = response.data;
 
-        const formattedPhase = data.moon_phase.toLowerCase().replace(/[\s_]+/g, '-');
+        const phase = data.moon_phase || 'Unknown';
+        const illuminationRaw = data.moon_illumination;
+        const illumination = typeof illuminationRaw === 'string'
+            ? illuminationRaw.replace('%', '').trim()
+            : '0';
 
+        const moonrise = data.moonrise || 'N/A';
+        const moonset = data.moonset || 'N/A';
+
+        const formattedPhase = phase.toLowerCase().replace(/[\s_]+/g, '-');
         const imageUrl = `https://moonphase.app/images/${formattedPhase}.png`;
 
         res.json({
             date,
             location,
-            phase: data.moon_phase,
-            illumination: data.moon_illumination,
-            moonrise: data.moonrise,
-            moonset: data.moonset,
+            phase,
+            illumination,
+            moonrise,
+            moonset,
             image: imageUrl,
         });
     } catch (error) {
