@@ -7,44 +7,36 @@ const API_KEY = process.env.MOON_API_KEY;
 const BASE_URL = 'https://api.ipgeolocation.io/astronomy';
 
 router.get('/moon', async (req, res) => {
-    const { date, lat, long } = req.query;
+    const { date, location } = req.query;
 
-    if (!date || !lat || !long) {
-        return res.status(400).json({ error: 'Missing date or coordinates (lat, long)' });
+    if (!date || !location) {
+        return res.status(400).json({ error: 'Missing date or location' });
     }
 
     try {
+        const [lat, lng] = location.split(',');
+
         const response = await axios.get(BASE_URL, {
             params: {
                 apiKey: API_KEY,
                 date,
                 lat,
-                long,
+                long: lng,
             },
         });
 
         const data = response.data;
 
         const phase = data.moon_phase || 'Unknown';
-        const illuminationRaw = data.moon_illumination;
-        let illumination = 'N/A';
-
-        if (typeof illuminationRaw === 'string' && illuminationRaw.includes('%')) {
-            illumination = illuminationRaw.replace('%', '').trim();
-        } else if (!isNaN(parseFloat(illuminationRaw))) {
-            illumination = parseFloat(illuminationRaw).toString();
-        }
-
         const moonrise = data.moonrise || 'N/A';
         const moonset = data.moonset || 'N/A';
 
         res.json({
             date,
-            location: `${lat},${long}`,
+            location,
             phase,
-            illumination,
             moonrise,
-            moonset,
+            moonset
         });
     } catch (error) {
         console.error('Moon API error:', error.message);
