@@ -10,13 +10,13 @@ router.get('/moon', async (req, res) => {
     const { date, lat, long } = req.query;
 
     if (!date || !lat || !long) {
-        return res.status(400).json({ error: 'Missing date or coordinates (lat, long)' });
+        return res.status(400).json({ error: 'Missing date or coordinates' });
     }
 
     try {
-        const response = await axios.get(BASE_URL, {
+        const response = await axios.get('https://api.ipgeolocation.io/astronomy', {
             params: {
-                apiKey: API_KEY,
+                apiKey: process.env.MOON_API_KEY,
                 date,
                 lat,
                 long,
@@ -25,20 +25,21 @@ router.get('/moon', async (req, res) => {
 
         const data = response.data;
 
-        const phase = data.moon_phase || 'Unknown';
-        const moonrise = data.moonrise || 'N/A';
-        const moonset = data.moonset || 'N/A';
+        const phase = data?.moon_phase || 'Unknown';
+        const moonrise = data?.moonrise || 'N/A';
+        const moonset = data?.moonset || 'N/A';
+        const location = `${lat},${long}`;
 
         res.json({
             date,
-            location: `${lat},${long}`,
+            location,
             phase,
             moonrise,
             moonset,
         });
     } catch (error) {
-        console.error('Moon API error:', error.message);
-        res.status(500).json({ error: 'Failed to fetch moon data' });
+        console.error(`Moon API error for ${date}:`, error?.response?.data || error.message);
+        return res.status(500).json({ error: 'Failed to fetch moon data for this date.' });
     }
 });
 
