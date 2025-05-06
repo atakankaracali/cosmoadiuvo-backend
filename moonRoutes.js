@@ -7,21 +7,19 @@ const API_KEY = process.env.MOON_API_KEY;
 const BASE_URL = 'https://api.ipgeolocation.io/astronomy';
 
 router.get('/moon', async (req, res) => {
-    const { date, location } = req.query;
+    const { date, lat, long } = req.query;
 
-    if (!date || !location) {
-        return res.status(400).json({ error: 'Missing date or location' });
+    if (!date || !lat || !long) {
+        return res.status(400).json({ error: 'Missing date or coordinates (lat, long)' });
     }
 
     try {
-        const [lat, lng] = location.split(',');
-
         const response = await axios.get(BASE_URL, {
             params: {
                 apiKey: API_KEY,
                 date,
                 lat,
-                long: lng,
+                long,
             },
         });
 
@@ -33,10 +31,10 @@ router.get('/moon', async (req, res) => {
 
         res.json({
             date,
-            location,
+            location: `${lat},${long}`,
             phase,
             moonrise,
-            moonset
+            moonset,
         });
     } catch (error) {
         console.error('Moon API error:', error.message);
