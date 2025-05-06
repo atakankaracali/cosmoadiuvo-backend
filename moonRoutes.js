@@ -7,15 +7,20 @@ const API_KEY = process.env.MOON_API_KEY;
 const BASE_URL = 'https://api.ipgeolocation.io/astronomy';
 
 router.get('/moon', async (req, res) => {
-    const { date, location } = req.query;
+    const { date, lat, long } = req.query;
 
-    if (!date || !location) {
-        return res.status(400).json({ error: 'Missing date or location' });
+    if (!date || !lat || !long) {
+        return res.status(400).json({ error: 'Missing date or coordinates (lat, long)' });
     }
 
     try {
         const response = await axios.get(BASE_URL, {
-            params: { apiKey: API_KEY, date, location },
+            params: {
+                apiKey: API_KEY,
+                date,
+                lat,
+                long,
+            },
         });
 
         const data = response.data;
@@ -24,22 +29,18 @@ router.get('/moon', async (req, res) => {
         const illuminationRaw = data.moon_illumination;
         const illumination = typeof illuminationRaw === 'string'
             ? illuminationRaw.replace('%', '').trim()
-            : '0';
+            : 'N/A';
 
         const moonrise = data.moonrise || 'N/A';
         const moonset = data.moonset || 'N/A';
 
-        const formattedPhase = phase.toLowerCase().replace(/[\s_]+/g, '-');
-        const imageUrl = `https://moonphase.app/images/${formattedPhase}.png`;
-
         res.json({
             date,
-            location,
+            location: `${lat},${long}`,
             phase,
             illumination,
             moonrise,
             moonset,
-            image: imageUrl,
         });
     } catch (error) {
         console.error('Moon API error:', error.message);
