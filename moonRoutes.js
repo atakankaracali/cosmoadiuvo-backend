@@ -24,7 +24,7 @@ router.get('/moon-data/month', (req, res) => {
   }
 
   try {
-    const rawData = fs.readFileSync(`./data/moon_data_${year}.json`, 'utf-8');
+    const rawData = fs.readFileSync(`./data/moon_data_${year}_daily.json`, 'utf-8');
     const allData = JSON.parse(rawData);
     const filtered = allData.filter(item => item.date.startsWith(`${year}-${month.padStart(2, '0')}`));
     res.json(filtered);
