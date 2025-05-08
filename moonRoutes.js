@@ -16,4 +16,22 @@ router.get('/moon-data', (req, res) => {
   }
 });
 
+router.get('/moon-data/month', (req, res) => {
+  const { year, month } = req.query;
+
+  if (!year || !month) {
+    return res.status(400).json({ error: 'Missing year or month parameter.' });
+  }
+
+  try {
+    const rawData = fs.readFileSync(`./data/moon_data_${year}.json`, 'utf-8');
+    const allData = JSON.parse(rawData);
+    const filtered = allData.filter(item => item.date.startsWith(`${year}-${month.padStart(2, '0')}`));
+    res.json(filtered);
+  } catch (error) {
+    console.error('❌ Moon data fetch error:', error.message);
+    res.status(500).json({ error: 'Moon data not available.' });
+  }
+});
+
 export default router;
