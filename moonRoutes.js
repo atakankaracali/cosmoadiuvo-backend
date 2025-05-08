@@ -1,53 +1,18 @@
 import express from 'express';
-import axios from 'axios';
+import fs from 'fs';
+import path from 'path';
 
 const router = express.Router();
-const API_KEY = process.env.MOON_API_KEY;
-const BASE_URL = 'https://api.ipgeolocation.io/astronomy';
 
-router.get('/moon', async (req, res) => {
-  const { date, lat, long } = req.query;
-
-  // Parametre kontrolü
-  if (!date || !lat || !long) {
-    return res.status(400).json({ error: 'Missing date or coordinates' });
-  }
-
+router.get('/moon-data', (req, res) => {
   try {
-    const response = await axios.get(BASE_URL, {
-      params: {
-        apiKey: API_KEY,
-        date,
-        lat,
-        long,
-      },
-    });
-
-    const data = response.data;
-
-    const phase = data?.moon_phase || 'Unknown';
-    const moonrise = data?.moonrise || 'N/A';
-    const moonset = data?.moonset || 'N/A';
-
-    return res.json({
-      date,
-      location: `${lat},${long}`,
-      phase,
-      moonrise,
-      moonset,
-    });
-
+    const filePath = path.resolve('./data/moon_data_2025.json');
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    const jsonData = JSON.parse(rawData);
+    res.json(jsonData);
   } catch (error) {
-    console.error(`❌ Moon API error for ${date}:`, error?.response?.data || error.message);
-
-    // Hata durumunda yine de frontend'i patlatma
-    return res.status(200).json({
-      date,
-      location: `${lat},${long}`,
-      phase: 'Unavailable',
-      moonrise: 'N/A',
-      moonset: 'N/A',
-    });
+    console.error('❌ Moon data JSON read error:', error.message);
+    res.status(500).json({ error: 'Moon data not available.' });
   }
 });
 

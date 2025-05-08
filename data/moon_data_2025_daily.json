@@ -1,0 +1,1827 @@
+[
+  {
+    "date": "2025-01-01",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-01-02",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-01-03",
+    "phase": "Waxing Crescent",
+    "illumination": "15%"
+  },
+  {
+    "date": "2025-01-04",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-01-05",
+    "phase": "Waxing Crescent",
+    "illumination": "33%"
+  },
+  {
+    "date": "2025-01-06",
+    "phase": "Waxing Crescent",
+    "illumination": "44%"
+  },
+  {
+    "date": "2025-01-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "56%"
+  },
+  {
+    "date": "2025-01-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "67%"
+  },
+  {
+    "date": "2025-01-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "77%"
+  },
+  {
+    "date": "2025-01-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "86%"
+  },
+  {
+    "date": "2025-01-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "93%"
+  },
+  {
+    "date": "2025-01-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-01-13",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-01-14",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-01-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-01-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "93%"
+  },
+  {
+    "date": "2025-01-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-01-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "80%"
+  },
+  {
+    "date": "2025-01-19",
+    "phase": "Waxing Gibbous",
+    "illumination": "72%"
+  },
+  {
+    "date": "2025-01-20",
+    "phase": "Waxing Gibbous",
+    "illumination": "63%"
+  },
+  {
+    "date": "2025-01-21",
+    "phase": "Waxing Gibbous",
+    "illumination": "53%"
+  },
+  {
+    "date": "2025-01-22",
+    "phase": "Waxing Crescent",
+    "illumination": "44%"
+  },
+  {
+    "date": "2025-01-23",
+    "phase": "Waxing Crescent",
+    "illumination": "35%"
+  },
+  {
+    "date": "2025-01-24",
+    "phase": "Waxing Crescent",
+    "illumination": "26%"
+  },
+  {
+    "date": "2025-01-25",
+    "phase": "Waxing Crescent",
+    "illumination": "18%"
+  },
+  {
+    "date": "2025-01-26",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-01-27",
+    "phase": "Waxing Crescent",
+    "illumination": "5%"
+  },
+  {
+    "date": "2025-01-28",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-01-29",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-01-30",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-01-31",
+    "phase": "Waxing Crescent",
+    "illumination": "5%"
+  },
+  {
+    "date": "2025-02-01",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-02-02",
+    "phase": "Waxing Crescent",
+    "illumination": "20%"
+  },
+  {
+    "date": "2025-02-03",
+    "phase": "Waxing Crescent",
+    "illumination": "30%"
+  },
+  {
+    "date": "2025-02-04",
+    "phase": "Waxing Crescent",
+    "illumination": "41%"
+  },
+  {
+    "date": "2025-02-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "52%"
+  },
+  {
+    "date": "2025-02-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "63%"
+  },
+  {
+    "date": "2025-02-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "73%"
+  },
+  {
+    "date": "2025-02-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "82%"
+  },
+  {
+    "date": "2025-02-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "90%"
+  },
+  {
+    "date": "2025-02-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "95%"
+  },
+  {
+    "date": "2025-02-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-02-12",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-02-13",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-02-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-02-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "92%"
+  },
+  {
+    "date": "2025-02-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "86%"
+  },
+  {
+    "date": "2025-02-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "79%"
+  },
+  {
+    "date": "2025-02-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "71%"
+  },
+  {
+    "date": "2025-02-19",
+    "phase": "Waxing Gibbous",
+    "illumination": "62%"
+  },
+  {
+    "date": "2025-02-20",
+    "phase": "Waxing Gibbous",
+    "illumination": "52%"
+  },
+  {
+    "date": "2025-02-21",
+    "phase": "Waxing Crescent",
+    "illumination": "43%"
+  },
+  {
+    "date": "2025-02-22",
+    "phase": "Waxing Crescent",
+    "illumination": "33%"
+  },
+  {
+    "date": "2025-02-23",
+    "phase": "Waxing Crescent",
+    "illumination": "24%"
+  },
+  {
+    "date": "2025-02-24",
+    "phase": "Waxing Crescent",
+    "illumination": "16%"
+  },
+  {
+    "date": "2025-02-25",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-02-26",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-02-27",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-02-28",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-03-01",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-03-02",
+    "phase": "Waxing Crescent",
+    "illumination": "9%"
+  },
+  {
+    "date": "2025-03-03",
+    "phase": "Waxing Crescent",
+    "illumination": "16%"
+  },
+  {
+    "date": "2025-03-04",
+    "phase": "Waxing Crescent",
+    "illumination": "26%"
+  },
+  {
+    "date": "2025-03-05",
+    "phase": "Waxing Crescent",
+    "illumination": "37%"
+  },
+  {
+    "date": "2025-03-06",
+    "phase": "Waxing Crescent",
+    "illumination": "48%"
+  },
+  {
+    "date": "2025-03-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "59%"
+  },
+  {
+    "date": "2025-03-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-03-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "79%"
+  },
+  {
+    "date": "2025-03-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "86%"
+  },
+  {
+    "date": "2025-03-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "93%"
+  },
+  {
+    "date": "2025-03-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-03-13",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-03-14",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-03-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-03-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-03-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-03-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "85%"
+  },
+  {
+    "date": "2025-03-19",
+    "phase": "Waxing Gibbous",
+    "illumination": "77%"
+  },
+  {
+    "date": "2025-03-20",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-03-21",
+    "phase": "Waxing Gibbous",
+    "illumination": "60%"
+  },
+  {
+    "date": "2025-03-22",
+    "phase": "Waxing Crescent",
+    "illumination": "50%"
+  },
+  {
+    "date": "2025-03-23",
+    "phase": "Waxing Crescent",
+    "illumination": "40%"
+  },
+  {
+    "date": "2025-03-24",
+    "phase": "Waxing Crescent",
+    "illumination": "30%"
+  },
+  {
+    "date": "2025-03-25",
+    "phase": "Waxing Crescent",
+    "illumination": "20%"
+  },
+  {
+    "date": "2025-03-26",
+    "phase": "Waxing Crescent",
+    "illumination": "12%"
+  },
+  {
+    "date": "2025-03-27",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-03-28",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-03-29",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-03-30",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-03-31",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-04-01",
+    "phase": "Waxing Crescent",
+    "illumination": "13%"
+  },
+  {
+    "date": "2025-04-02",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-04-03",
+    "phase": "Waxing Crescent",
+    "illumination": "33%"
+  },
+  {
+    "date": "2025-04-04",
+    "phase": "Waxing Crescent",
+    "illumination": "44%"
+  },
+  {
+    "date": "2025-04-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "54%"
+  },
+  {
+    "date": "2025-04-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "65%"
+  },
+  {
+    "date": "2025-04-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "74%"
+  },
+  {
+    "date": "2025-04-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "82%"
+  },
+  {
+    "date": "2025-04-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "89%"
+  },
+  {
+    "date": "2025-04-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-04-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-04-12",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-04-13",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-04-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-04-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-04-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "89%"
+  },
+  {
+    "date": "2025-04-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "83%"
+  },
+  {
+    "date": "2025-04-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "75%"
+  },
+  {
+    "date": "2025-04-19",
+    "phase": "Waxing Gibbous",
+    "illumination": "66%"
+  },
+  {
+    "date": "2025-04-20",
+    "phase": "Waxing Gibbous",
+    "illumination": "56%"
+  },
+  {
+    "date": "2025-04-21",
+    "phase": "Waxing Crescent",
+    "illumination": "46%"
+  },
+  {
+    "date": "2025-04-22",
+    "phase": "Waxing Crescent",
+    "illumination": "35%"
+  },
+  {
+    "date": "2025-04-23",
+    "phase": "Waxing Crescent",
+    "illumination": "25%"
+  },
+  {
+    "date": "2025-04-24",
+    "phase": "Waxing Crescent",
+    "illumination": "16%"
+  },
+  {
+    "date": "2025-04-25",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-04-26",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-04-27",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-04-28",
+    "phase": "New Moon",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-04-29",
+    "phase": "Waxing Crescent",
+    "illumination": "4%"
+  },
+  {
+    "date": "2025-04-30",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-05-01",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-05-02",
+    "phase": "Waxing Crescent",
+    "illumination": "29%"
+  },
+  {
+    "date": "2025-05-03",
+    "phase": "Waxing Crescent",
+    "illumination": "39%"
+  },
+  {
+    "date": "2025-05-04",
+    "phase": "Waxing Crescent",
+    "illumination": "49%"
+  },
+  {
+    "date": "2025-05-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "59%"
+  },
+  {
+    "date": "2025-05-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-05-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "78%"
+  },
+  {
+    "date": "2025-05-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "85%"
+  },
+  {
+    "date": "2025-05-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-05-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-05-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-05-12",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-05-13",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-05-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-05-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "93%"
+  },
+  {
+    "date": "2025-05-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-05-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "79%"
+  },
+  {
+    "date": "2025-05-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "71%"
+  },
+  {
+    "date": "2025-05-19",
+    "phase": "Waxing Gibbous",
+    "illumination": "61%"
+  },
+  {
+    "date": "2025-05-20",
+    "phase": "First Quarter",
+    "illumination": "50%"
+  },
+  {
+    "date": "2025-05-21",
+    "phase": "Waxing Crescent",
+    "illumination": "39%"
+  },
+  {
+    "date": "2025-05-22",
+    "phase": "Waxing Crescent",
+    "illumination": "28%"
+  },
+  {
+    "date": "2025-05-23",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-05-24",
+    "phase": "Waxing Crescent",
+    "illumination": "10%"
+  },
+  {
+    "date": "2025-05-25",
+    "phase": "Waxing Crescent",
+    "illumination": "4%"
+  },
+  {
+    "date": "2025-05-26",
+    "phase": "New Moon",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-05-27",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-05-28",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-05-29",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-05-30",
+    "phase": "Waxing Crescent",
+    "illumination": "15%"
+  },
+  {
+    "date": "2025-05-31",
+    "phase": "Waxing Crescent",
+    "illumination": "24%"
+  },
+  {
+    "date": "2025-06-01",
+    "phase": "Waxing Crescent",
+    "illumination": "34%"
+  },
+  {
+    "date": "2025-06-02",
+    "phase": "Waxing Crescent",
+    "illumination": "44%"
+  },
+  {
+    "date": "2025-06-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "54%"
+  },
+  {
+    "date": "2025-06-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "63%"
+  },
+  {
+    "date": "2025-06-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "72%"
+  },
+  {
+    "date": "2025-06-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "80%"
+  },
+  {
+    "date": "2025-06-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-06-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "93%"
+  },
+  {
+    "date": "2025-06-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-06-10",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-06-11",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-06-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-06-13",
+    "phase": "Waxing Gibbous",
+    "illumination": "95%"
+  },
+  {
+    "date": "2025-06-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "90%"
+  },
+  {
+    "date": "2025-06-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "83%"
+  },
+  {
+    "date": "2025-06-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "74%"
+  },
+  {
+    "date": "2025-06-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "64%"
+  },
+  {
+    "date": "2025-06-18",
+    "phase": "Waxing Gibbous",
+    "illumination": "54%"
+  },
+  {
+    "date": "2025-06-19",
+    "phase": "Waxing Crescent",
+    "illumination": "42%"
+  },
+  {
+    "date": "2025-06-20",
+    "phase": "Waxing Crescent",
+    "illumination": "31%"
+  },
+  {
+    "date": "2025-06-21",
+    "phase": "Waxing Crescent",
+    "illumination": "21%"
+  },
+  {
+    "date": "2025-06-22",
+    "phase": "Waxing Crescent",
+    "illumination": "12%"
+  },
+  {
+    "date": "2025-06-23",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-06-24",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-06-25",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-06-26",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-06-27",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-06-28",
+    "phase": "Waxing Crescent",
+    "illumination": "12%"
+  },
+  {
+    "date": "2025-06-29",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-06-30",
+    "phase": "Waxing Crescent",
+    "illumination": "28%"
+  },
+  {
+    "date": "2025-07-01",
+    "phase": "Waxing Crescent",
+    "illumination": "38%"
+  },
+  {
+    "date": "2025-07-02",
+    "phase": "Waxing Crescent",
+    "illumination": "47%"
+  },
+  {
+    "date": "2025-07-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "57%"
+  },
+  {
+    "date": "2025-07-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "66%"
+  },
+  {
+    "date": "2025-07-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "75%"
+  },
+  {
+    "date": "2025-07-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "82%"
+  },
+  {
+    "date": "2025-07-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "89%"
+  },
+  {
+    "date": "2025-07-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-07-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-07-10",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-07-11",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-07-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-07-13",
+    "phase": "Waxing Gibbous",
+    "illumination": "92%"
+  },
+  {
+    "date": "2025-07-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "86%"
+  },
+  {
+    "date": "2025-07-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "77%"
+  },
+  {
+    "date": "2025-07-16",
+    "phase": "Waxing Gibbous",
+    "illumination": "67%"
+  },
+  {
+    "date": "2025-07-17",
+    "phase": "Waxing Gibbous",
+    "illumination": "56%"
+  },
+  {
+    "date": "2025-07-18",
+    "phase": "Waxing Crescent",
+    "illumination": "45%"
+  },
+  {
+    "date": "2025-07-19",
+    "phase": "Waxing Crescent",
+    "illumination": "33%"
+  },
+  {
+    "date": "2025-07-20",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-07-21",
+    "phase": "Waxing Crescent",
+    "illumination": "14%"
+  },
+  {
+    "date": "2025-07-22",
+    "phase": "Waxing Crescent",
+    "illumination": "7%"
+  },
+  {
+    "date": "2025-07-23",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-07-24",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-07-25",
+    "phase": "New Moon",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-07-26",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-07-27",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-07-28",
+    "phase": "Waxing Crescent",
+    "illumination": "15%"
+  },
+  {
+    "date": "2025-07-29",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-07-30",
+    "phase": "Waxing Crescent",
+    "illumination": "31%"
+  },
+  {
+    "date": "2025-07-31",
+    "phase": "Waxing Crescent",
+    "illumination": "40%"
+  },
+  {
+    "date": "2025-08-01",
+    "phase": "Waxing Crescent",
+    "illumination": "50%"
+  },
+  {
+    "date": "2025-08-02",
+    "phase": "Waxing Gibbous",
+    "illumination": "59%"
+  },
+  {
+    "date": "2025-08-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "68%"
+  },
+  {
+    "date": "2025-08-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "77%"
+  },
+  {
+    "date": "2025-08-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "85%"
+  },
+  {
+    "date": "2025-08-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-08-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-08-08",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-08-09",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-08-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-08-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-08-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "88%"
+  },
+  {
+    "date": "2025-08-13",
+    "phase": "Waxing Gibbous",
+    "illumination": "79%"
+  },
+  {
+    "date": "2025-08-14",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-08-15",
+    "phase": "Waxing Gibbous",
+    "illumination": "58%"
+  },
+  {
+    "date": "2025-08-16",
+    "phase": "Waxing Crescent",
+    "illumination": "47%"
+  },
+  {
+    "date": "2025-08-17",
+    "phase": "Waxing Crescent",
+    "illumination": "36%"
+  },
+  {
+    "date": "2025-08-18",
+    "phase": "Waxing Crescent",
+    "illumination": "25%"
+  },
+  {
+    "date": "2025-08-19",
+    "phase": "Waxing Crescent",
+    "illumination": "16%"
+  },
+  {
+    "date": "2025-08-20",
+    "phase": "Waxing Crescent",
+    "illumination": "9%"
+  },
+  {
+    "date": "2025-08-21",
+    "phase": "Waxing Crescent",
+    "illumination": "4%"
+  },
+  {
+    "date": "2025-08-22",
+    "phase": "New Moon",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-08-23",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-08-24",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-08-25",
+    "phase": "Waxing Crescent",
+    "illumination": "5%"
+  },
+  {
+    "date": "2025-08-26",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-08-27",
+    "phase": "Waxing Crescent",
+    "illumination": "17%"
+  },
+  {
+    "date": "2025-08-28",
+    "phase": "Waxing Crescent",
+    "illumination": "25%"
+  },
+  {
+    "date": "2025-08-29",
+    "phase": "Waxing Crescent",
+    "illumination": "34%"
+  },
+  {
+    "date": "2025-08-30",
+    "phase": "Waxing Crescent",
+    "illumination": "43%"
+  },
+  {
+    "date": "2025-08-31",
+    "phase": "Waxing Gibbous",
+    "illumination": "52%"
+  },
+  {
+    "date": "2025-09-01",
+    "phase": "Waxing Gibbous",
+    "illumination": "62%"
+  },
+  {
+    "date": "2025-09-02",
+    "phase": "Waxing Gibbous",
+    "illumination": "71%"
+  },
+  {
+    "date": "2025-09-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "80%"
+  },
+  {
+    "date": "2025-09-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-09-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-09-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-09-07",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-09-08",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-09-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-09-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "90%"
+  },
+  {
+    "date": "2025-09-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "82%"
+  },
+  {
+    "date": "2025-09-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "72%"
+  },
+  {
+    "date": "2025-09-13",
+    "phase": "Waxing Gibbous",
+    "illumination": "61%"
+  },
+  {
+    "date": "2025-09-14",
+    "phase": "Waxing Crescent",
+    "illumination": "49%"
+  },
+  {
+    "date": "2025-09-15",
+    "phase": "Waxing Crescent",
+    "illumination": "38%"
+  },
+  {
+    "date": "2025-09-16",
+    "phase": "Waxing Crescent",
+    "illumination": "28%"
+  },
+  {
+    "date": "2025-09-17",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-09-18",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-09-19",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-09-20",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-09-21",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-09-22",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-09-23",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-09-24",
+    "phase": "Waxing Crescent",
+    "illumination": "7%"
+  },
+  {
+    "date": "2025-09-25",
+    "phase": "Waxing Crescent",
+    "illumination": "12%"
+  },
+  {
+    "date": "2025-09-26",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-09-27",
+    "phase": "Waxing Crescent",
+    "illumination": "27%"
+  },
+  {
+    "date": "2025-09-28",
+    "phase": "Waxing Crescent",
+    "illumination": "36%"
+  },
+  {
+    "date": "2025-09-29",
+    "phase": "Waxing Crescent",
+    "illumination": "45%"
+  },
+  {
+    "date": "2025-09-30",
+    "phase": "Waxing Gibbous",
+    "illumination": "55%"
+  },
+  {
+    "date": "2025-10-01",
+    "phase": "Waxing Gibbous",
+    "illumination": "65%"
+  },
+  {
+    "date": "2025-10-02",
+    "phase": "Waxing Gibbous",
+    "illumination": "74%"
+  },
+  {
+    "date": "2025-10-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "83%"
+  },
+  {
+    "date": "2025-10-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-10-05",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-10-06",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-10-07",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-10-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-10-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "92%"
+  },
+  {
+    "date": "2025-10-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "84%"
+  },
+  {
+    "date": "2025-10-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "75%"
+  },
+  {
+    "date": "2025-10-12",
+    "phase": "Waxing Gibbous",
+    "illumination": "64%"
+  },
+  {
+    "date": "2025-10-13",
+    "phase": "Waxing Gibbous",
+    "illumination": "53%"
+  },
+  {
+    "date": "2025-10-14",
+    "phase": "Waxing Crescent",
+    "illumination": "42%"
+  },
+  {
+    "date": "2025-10-15",
+    "phase": "Waxing Crescent",
+    "illumination": "32%"
+  },
+  {
+    "date": "2025-10-16",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-10-17",
+    "phase": "Waxing Crescent",
+    "illumination": "15%"
+  },
+  {
+    "date": "2025-10-18",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-10-19",
+    "phase": "Waxing Crescent",
+    "illumination": "4%"
+  },
+  {
+    "date": "2025-10-20",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-10-21",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-10-22",
+    "phase": "Waxing Crescent",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-10-23",
+    "phase": "Waxing Crescent",
+    "illumination": "4%"
+  },
+  {
+    "date": "2025-10-24",
+    "phase": "Waxing Crescent",
+    "illumination": "8%"
+  },
+  {
+    "date": "2025-10-25",
+    "phase": "Waxing Crescent",
+    "illumination": "14%"
+  },
+  {
+    "date": "2025-10-26",
+    "phase": "Waxing Crescent",
+    "illumination": "21%"
+  },
+  {
+    "date": "2025-10-27",
+    "phase": "Waxing Crescent",
+    "illumination": "29%"
+  },
+  {
+    "date": "2025-10-28",
+    "phase": "Waxing Crescent",
+    "illumination": "38%"
+  },
+  {
+    "date": "2025-10-29",
+    "phase": "Waxing Crescent",
+    "illumination": "48%"
+  },
+  {
+    "date": "2025-10-30",
+    "phase": "Waxing Gibbous",
+    "illumination": "59%"
+  },
+  {
+    "date": "2025-10-31",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-11-01",
+    "phase": "Waxing Gibbous",
+    "illumination": "78%"
+  },
+  {
+    "date": "2025-11-02",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-11-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-11-04",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-11-05",
+    "phase": "Full Moon",
+    "illumination": "100%"
+  },
+  {
+    "date": "2025-11-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "98%"
+  },
+  {
+    "date": "2025-11-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "94%"
+  },
+  {
+    "date": "2025-11-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "87%"
+  },
+  {
+    "date": "2025-11-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "78%"
+  },
+  {
+    "date": "2025-11-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "68%"
+  },
+  {
+    "date": "2025-11-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "58%"
+  },
+  {
+    "date": "2025-11-12",
+    "phase": "Waxing Crescent",
+    "illumination": "47%"
+  },
+  {
+    "date": "2025-11-13",
+    "phase": "Waxing Crescent",
+    "illumination": "37%"
+  },
+  {
+    "date": "2025-11-14",
+    "phase": "Waxing Crescent",
+    "illumination": "28%"
+  },
+  {
+    "date": "2025-11-15",
+    "phase": "Waxing Crescent",
+    "illumination": "19%"
+  },
+  {
+    "date": "2025-11-16",
+    "phase": "Waxing Crescent",
+    "illumination": "12%"
+  },
+  {
+    "date": "2025-11-17",
+    "phase": "Waxing Crescent",
+    "illumination": "7%"
+  },
+  {
+    "date": "2025-11-18",
+    "phase": "Waxing Crescent",
+    "illumination": "3%"
+  },
+  {
+    "date": "2025-11-19",
+    "phase": "New Moon",
+    "illumination": "1%"
+  },
+  {
+    "date": "2025-11-20",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-11-21",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-11-22",
+    "phase": "Waxing Crescent",
+    "illumination": "5%"
+  },
+  {
+    "date": "2025-11-23",
+    "phase": "Waxing Crescent",
+    "illumination": "9%"
+  },
+  {
+    "date": "2025-11-24",
+    "phase": "Waxing Crescent",
+    "illumination": "16%"
+  },
+  {
+    "date": "2025-11-25",
+    "phase": "Waxing Crescent",
+    "illumination": "23%"
+  },
+  {
+    "date": "2025-11-26",
+    "phase": "Waxing Crescent",
+    "illumination": "32%"
+  },
+  {
+    "date": "2025-11-27",
+    "phase": "Waxing Crescent",
+    "illumination": "42%"
+  },
+  {
+    "date": "2025-11-28",
+    "phase": "Waxing Gibbous",
+    "illumination": "52%"
+  },
+  {
+    "date": "2025-11-29",
+    "phase": "Waxing Gibbous",
+    "illumination": "63%"
+  },
+  {
+    "date": "2025-11-30",
+    "phase": "Waxing Gibbous",
+    "illumination": "73%"
+  },
+  {
+    "date": "2025-12-01",
+    "phase": "Waxing Gibbous",
+    "illumination": "83%"
+  },
+  {
+    "date": "2025-12-02",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-12-03",
+    "phase": "Waxing Gibbous",
+    "illumination": "97%"
+  },
+  {
+    "date": "2025-12-04",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-12-05",
+    "phase": "Full Moon",
+    "illumination": "99%"
+  },
+  {
+    "date": "2025-12-06",
+    "phase": "Waxing Gibbous",
+    "illumination": "96%"
+  },
+  {
+    "date": "2025-12-07",
+    "phase": "Waxing Gibbous",
+    "illumination": "91%"
+  },
+  {
+    "date": "2025-12-08",
+    "phase": "Waxing Gibbous",
+    "illumination": "83%"
+  },
+  {
+    "date": "2025-12-09",
+    "phase": "Waxing Gibbous",
+    "illumination": "74%"
+  },
+  {
+    "date": "2025-12-10",
+    "phase": "Waxing Gibbous",
+    "illumination": "64%"
+  },
+  {
+    "date": "2025-12-11",
+    "phase": "Waxing Gibbous",
+    "illumination": "54%"
+  },
+  {
+    "date": "2025-12-12",
+    "phase": "Waxing Crescent",
+    "illumination": "44%"
+  },
+  {
+    "date": "2025-12-13",
+    "phase": "Waxing Crescent",
+    "illumination": "34%"
+  },
+  {
+    "date": "2025-12-14",
+    "phase": "Waxing Crescent",
+    "illumination": "26%"
+  },
+  {
+    "date": "2025-12-15",
+    "phase": "Waxing Crescent",
+    "illumination": "18%"
+  },
+  {
+    "date": "2025-12-16",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-12-17",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-12-18",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-12-19",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-12-20",
+    "phase": "New Moon",
+    "illumination": "0%"
+  },
+  {
+    "date": "2025-12-21",
+    "phase": "Waxing Crescent",
+    "illumination": "2%"
+  },
+  {
+    "date": "2025-12-22",
+    "phase": "Waxing Crescent",
+    "illumination": "6%"
+  },
+  {
+    "date": "2025-12-23",
+    "phase": "Waxing Crescent",
+    "illumination": "11%"
+  },
+  {
+    "date": "2025-12-24",
+    "phase": "Waxing Crescent",
+    "illumination": "18%"
+  },
+  {
+    "date": "2025-12-25",
+    "phase": "Waxing Crescent",
+    "illumination": "27%"
+  },
+  {
+    "date": "2025-12-26",
+    "phase": "Waxing Crescent",
+    "illumination": "36%"
+  },
+  {
+    "date": "2025-12-27",
+    "phase": "Waxing Crescent",
+    "illumination": "47%"
+  },
+  {
+    "date": "2025-12-28",
+    "phase": "Waxing Gibbous",
+    "illumination": "58%"
+  },
+  {
+    "date": "2025-12-29",
+    "phase": "Waxing Gibbous",
+    "illumination": "69%"
+  },
+  {
+    "date": "2025-12-30",
+    "phase": "Waxing Gibbous",
+    "illumination": "79%"
+  },
+  {
+    "date": "2025-12-31",
+    "phase": "Waxing Gibbous",
+    "illumination": "88%"
+  }
+]
