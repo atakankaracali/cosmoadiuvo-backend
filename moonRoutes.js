@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/moon-data', (req, res) => {
   try {
-    const filePath = path.resolve('./data/moon_data_2025.json');
+    const filePath = path.resolve('./data/moon_data_2025_daily.json');
     const rawData = fs.readFileSync(filePath, 'utf-8');
     const jsonData = JSON.parse(rawData);
     res.json(jsonData);
