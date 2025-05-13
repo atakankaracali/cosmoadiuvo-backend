@@ -1,7 +1,8 @@
 import express from "express";
 import axios from "axios";
 import { sanitizeInput, hasAdvancedInjection, isTooLong } from "../utils/secureInput.js";
-import { logToFile } from "../utils/logUtils.js"; // ayrı dosyada tutman daha iyi
+import { logToFile } from "../utils/logUtils.js";
+
 const router = express.Router();
 
 router.post("/generate-horoscope", async (req, res) => {
