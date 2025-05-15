@@ -1,0 +1,478 @@
+{
+    "mercury": [
+      {
+        "start_date": "2025-03-14",
+        "end_date": "2025-04-07",
+        "zodiac_signs": [
+          "Aries",
+          "Pisces"
+        ],
+        "effects": "Communication and travel delays, misunderstandings. Review action and reflection. Rethink communication, self-advocacy, and processing emotions."
+      },
+      {
+        "start_date": "2025-07-18",
+        "end_date": "2025-08-11",
+        "zodiac_signs": [
+          "Leo"
+        ],
+        "effects": "Miscommunications, travel plan issues. Double-check details. Review self-expression and boldness."
+      },
+      {
+        "start_date": "2025-11-09",
+        "end_date": "2025-11-29",
+        "zodiac_signs": [
+          "Sagittarius",
+          "Scorpio"
+        ],
+        "effects": "Reassess beliefs and partnerships involving finances or intimacy. Uncover hidden truths, transform outdated perspectives."
+      },
+      {
+        "start_date": "2026-02-26",
+        "end_date": "2026-03-20",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2026-06-29",
+        "end_date": "2026-07-23",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2026-10-24",
+        "end_date": "2026-11-13",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2027-02-09",
+        "end_date": "2027-03-03",
+        "zodiac_signs": [
+          "Pisces",
+          "Aquarius"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2027-06-10",
+        "end_date": "2027-07-04",
+        "zodiac_signs": [
+          "Cancer",
+          "Gemini"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2027-10-07",
+        "end_date": "2027-10-28",
+        "zodiac_signs": [
+          "Scorpio",
+          "Libra"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2028-01-24",
+        "end_date": "2028-02-24",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2028-05-21",
+        "end_date": "2028-06-24",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2028-09-19",
+        "end_date": "2028-10-11",
+        "zodiac_signs": [],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2029-01-07",
+        "end_date": "2029-01-27",
+        "zodiac_signs": [
+          "Aquarius",
+          "Capricorn"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2029-05-01",
+        "end_date": "2029-05-25",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2029-09-02",
+        "end_date": "2029-09-24",
+        "zodiac_signs": [
+          "Libra",
+          "Virgo"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2029-12-22",
+        "end_date": "2030-01-11",
+        "zodiac_signs": [
+          "Capricorn",
+          "Sagittarius"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2030-04-12",
+        "end_date": "2030-05-06",
+        "zodiac_signs": [
+          "Taurus",
+          "Aries"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2030-08-15",
+        "end_date": "2030-09-08",
+        "zodiac_signs": [
+          "Virgo"
+        ],
+        "effects": "General communication and technology disruptions."
+      },
+      {
+        "start_date": "2030-12-05",
+        "end_date": "2030-12-25",
+        "zodiac_signs": [
+          "Capricorn",
+          "Sagittarius"
+        ],
+        "effects": "General communication and technology disruptions."
+      }
+    ],
+    "venus": [
+      {
+        "start_date": "2025-03-01",
+        "end_date": "2025-04-12",
+        "zodiac_signs": [
+          "Aries",
+          "Pisces"
+        ],
+        "effects": "Re-evaluate life path, relationships, and boundaries. Reflect on desires, beauty, worthiness, love, and creativity. Release past hurts."
+      },
+      {
+        "start_date": "2026-10-03",
+        "end_date": "2026-11-13",
+        "zodiac_signs": [
+          "Scorpio",
+          "Libra"
+        ],
+        "effects": "Revisit power dynamics, intimacy, balance, and harmony in relationships."
+      },
+      {
+        "start_date": "2028-05-10",
+        "end_date": "2028-06-22",
+        "zodiac_signs": [
+          "Gemini"
+        ],
+        "effects": "Re-evaluate communication and intellectual connection in relationships."
+      },
+      {
+        "start_date": "2029-12-16",
+        "end_date": "2030-01-26",
+        "zodiac_signs": [
+          "Capricorn"
+        ],
+        "effects": "Reconsider commitment and values related to career and stability in relationships."
+      }
+    ],
+    "mars": [
+      {
+        "start_date": "2024-12-06",
+        "end_date": "2025-02-23",
+        "zodiac_signs": [
+          "Leo",
+          "Cancer"
+        ],
+        "effects": "Reassess personal goals, motivation, and self-expression. Process anger and desires, focus on strategy and family matters."
+      },
+      {
+        "start_date": "2027-01-10",
+        "end_date": "2027-04-01",
+        "zodiac_signs": [
+          "Virgo",
+          "Leo"
+        ],
+        "effects": "Re-evaluate energy towards work and health. Revisit creativity and self-expression."
+      },
+      {
+        "start_date": "2029-02-14",
+        "end_date": "2029-03-05",
+        "zodiac_signs": [
+          "Libra",
+          "Virgo"
+        ],
+        "effects": "Reconsider assertiveness and balance in relationships. Re-evaluate impact on work, health, and routines."
+      }
+    ],
+    "jupiter": [
+      {
+        "start_date": "2024-10-09",
+        "end_date": "2025-02-04",
+        "zodiac_signs": [
+          "Gemini"
+        ],
+        "effects": "Review communication, learning, travel plans, and intellectual pursuits."
+      },
+      {
+        "start_date": "2025-11-11",
+        "end_date": "2026-03-26",
+        "zodiac_signs": [
+          "Cancer"
+        ],
+        "effects": "Re-evaluate luck and expansion in home, family, and emotional security."
+      },
+      {
+        "start_date": "2027-03-14",
+        "end_date": "2027-07-18",
+        "zodiac_signs": [
+          "Leo"
+        ],
+        "effects": "Re-evaluate luck and expansion in creativity, self-expression, and romance."
+      },
+      {
+        "start_date": "2028-07-23",
+        "end_date": "2028-11-19",
+        "zodiac_signs": [
+          "Virgo"
+        ],
+        "effects": "Re-evaluate luck and expansion in work, health, and service."
+      },
+      {
+        "start_date": "2029-11-22",
+        "end_date": "2030-03-21",
+        "zodiac_signs": [
+          "Libra"
+        ],
+        "effects": "Re-evaluate luck and expansion in relationships, balance, and harmony."
+      }
+    ],
+    "saturn": [
+      {
+        "start_date": "2025-07-04",
+        "end_date": "2025-11-20",
+        "zodiac_signs": [
+          "Pisces"
+        ],
+        "effects": "Re-evaluate responsibilities and limitations in dreams, spirituality, and the subconscious."
+      },
+      {
+        "start_date": "2026-09-06",
+        "end_date": "2027-02-03",
+        "zodiac_signs": [
+          "Gemini",
+          "Taurus"
+        ],
+        "effects": "Reconsider responsibilities in communication, intellect, stability, security, and values."
+      },
+      {
+        "start_date": "2027-11-20",
+        "end_date": "2028-04-07",
+        "zodiac_signs": [
+          "Aries"
+        ],
+        "effects": "Re-evaluate responsibilities and limitations in self and assertiveness."
+      },
+      {
+        "start_date": "2028-06-17",
+        "end_date": "2028-11-02",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Reconsider responsibilities and limitations in stability, security, and values."
+      },
+      {
+        "start_date": "2029-09-06",
+        "end_date": "2030-01-19",
+        "zodiac_signs": [
+          "Gemini"
+        ],
+        "effects": "Re-evaluate responsibilities and limitations in communication and intellect."
+      },
+      {
+        "start_date": "2030-09-21",
+        "end_date": "2031-02-07",
+        "zodiac_signs": [
+          "Cancer"
+        ],
+        "effects": "Reconsider responsibilities and limitations in home, family, and emotional security."
+      }
+    ],
+    "uranus": [
+      {
+        "start_date": "2024-09-01",
+        "end_date": "2025-01-30",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2025-09-04",
+        "end_date": "2026-01-31",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2026-09-07",
+        "end_date": "2027-02-04",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2027-09-09",
+        "end_date": "2028-02-06",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2028-08-13",
+        "end_date": "2029-01-11",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2029-08-16",
+        "end_date": "2030-01-16",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      },
+      {
+        "start_date": "2030-08-18",
+        "end_date": "2031-01-19",
+        "zodiac_signs": [
+          "Taurus"
+        ],
+        "effects": "Re-evaluate security, finances, self-worth, individuality, and connection to the planet."
+      }
+    ],
+    "neptune": [
+      {
+        "start_date": "2025-07-04",
+        "end_date": "2025-12-10",
+        "zodiac_signs": [
+          "Pisces"
+        ],
+        "effects": "Intensified intuition, review dreams and desires. Illusions may fade, revealing reality. Healing old wounds."
+      },
+      {
+        "start_date": "2026-07-07",
+        "end_date": "2026-12-13",
+        "zodiac_signs": [
+          "Pisces"
+        ],
+        "effects": "Intensified intuition, review dreams and desires. Illusions may fade, revealing reality. Healing old wounds."
+      },
+      {
+        "start_date": "2027-06-18",
+        "end_date": "2027-11-24",
+        "zodiac_signs": [
+          "Aries"
+        ],
+        "effects": "More assertive and individual approach to dreams and spiritual pursuits. Blurring of lines between idealism and personal efforts."
+      },
+      {
+        "start_date": "2028-06-21",
+        "end_date": "2028-11-27",
+        "zodiac_signs": [
+          "Aries"
+        ],
+        "effects": "Effects on dreams and spiritual pursuits with a focus on individual identity."
+      },
+      {
+        "start_date": "2029-06-24",
+        "end_date": "2029-11-30",
+        "zodiac_signs": [
+          "Aries"
+        ],
+        "effects": "Effects on dreams and spiritual pursuits with a focus on individual identity."
+      },
+      {
+        "start_date": "2030-06-28",
+        "end_date": "2030-12-04",
+        "zodiac_signs": [
+          "Aries"
+        ],
+        "effects": "Effects on dreams and spiritual pursuits with a focus on individual identity."
+      }
+    ],
+    "pluto": [
+      {
+        "start_date": "2024-11-20",
+        "end_date": "2025-05-04",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Inner dilemmas between old systems and new visions. Re-evaluate personal power and role in the collective."
+      },
+      {
+        "start_date": "2025-05-04",
+        "end_date": "2025-10-14",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      },
+      {
+        "start_date": "2026-05-05",
+        "end_date": "2026-10-15",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      },
+      {
+        "start_date": "2027-05-06",
+        "end_date": "2027-10-16",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      },
+      {
+        "start_date": "2028-05-07",
+        "end_date": "2028-10-17",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      },
+      {
+        "start_date": "2029-05-08",
+        "end_date": "2029-10-18",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      },
+      {
+        "start_date": "2030-05-09",
+        "end_date": "2030-10-19",
+        "zodiac_signs": [
+          "Aquarius"
+        ],
+        "effects": "Re-evaluate personal power, role in the collective, and challenging old systems."
+      }
+    ]
+  }
