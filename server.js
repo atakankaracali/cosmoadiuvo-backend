@@ -7,6 +7,7 @@ import moonRoutes from './moonRoutes.js';
 import horoscopeRoute from './scripts/horoscopeRoute.js';
 import retroRoute from './scripts/retroRoute.js';
 import eclipseRoute from './scripts/eclipseRoute.js';
+import visitRoute from "./routes/visitRoute";
 
 dotenv.config();
 const app = express();
@@ -26,6 +27,7 @@ app.use('/api', moonRoutes);
 app.use('/api', horoscopeRoute);
 app.use('/api', retroRoute);
 app.use('/api', eclipseRoute);
+app.use("/api/increment-visit", visitRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

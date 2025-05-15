@@ -22,3 +22,6 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+cosmoadiuvo-firebase-adminsdk-*.json
+cosmoadiuvo-firebase-adminsdk-fbsvc-cd4649e7e7.json
