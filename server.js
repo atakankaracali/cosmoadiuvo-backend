@@ -7,7 +7,7 @@ import moonRoutes from './moonRoutes.js';
 import horoscopeRoute from './scripts/horoscopeRoute.js';
 import retroRoute from './scripts/retroRoute.js';
 import eclipseRoute from './scripts/eclipseRoute.js';
-import visitRoute from "./routes/visitRoute";
+import visitRoute from "./routes/visitRoute.js";
 
 dotenv.config();
 const app = express();
