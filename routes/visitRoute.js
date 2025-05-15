@@ -1,5 +1,5 @@
 import express from "express";
-import { db } from "../config/firebase";
+import { db } from "../config/firebase.js";
 
 const router = express.Router();
 
@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
     const updated = await ref.get();
     res.json({ count: updated.data()?.count });
   } catch (err) {
-    console.error("Visit counter error:", err);
+    console.error("Visitor counter error:", err);
     res.status(500).json({ error: "Counter update failed." });
   }
 });
