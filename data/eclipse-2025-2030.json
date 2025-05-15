@@ -1,0 +1,173 @@
+{
+    "title": "Eclipses",
+    "eclipses": [
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2025-03-29",
+        "visibleIn": "kuzeybatı Afrika, Avrupa, kuzey Rusya"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2025-09-21",
+        "visibleIn": "Avustralya, Antarktika, Pasifik Okyanusu, Atlantik Okyanusu"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2025-03-13",
+        "visibleIn": "Pasifik, Amerika, batı Avrupa, batı Afrika"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2025-09-07",
+        "visibleIn": "Avrupa, Afrika, Asya, Avustralya"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Annular",
+        "date": "2026-02-17",
+        "visibleIn": "Antarktika, Afrika, Güney Amerika, Pasifik Okyanusu, Atlantik Okyanusu, Hint Okyanusu"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Total",
+        "date": "2026-08-12",
+        "visibleIn": "Grönland, İzlanda, İspanya, Rusya, Portekiz, Avrupa, Afrika, Kuzey Amerika, Atlantik Okyanusu, Arktik Okyanusu, Pasifik Okyanusu"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2026-03-02",
+        "visibleIn": "Asya, Avustralya, Pasifik Adaları, Amerika"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Partial",
+        "date": "2026-08-27",
+        "visibleIn": "doğu Pasifik, Amerika, Avrupa, Afrika"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Annular",
+        "date": "2027-02-06",
+        "visibleIn": "Güney Amerika, Atlantik Okyanusu, Afrika"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Total",
+        "date": "2027-08-02",
+        "visibleIn": "İspanya, Cebelitarık, Fas, Cezayir, Tunus, Libya, Mısır, Sudan, Suudi Arabistan, Yemen, Somali, İngiliz Hint Okyanusu Toprakları"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Penumbral",
+        "date": "2027-02-20",
+        "visibleIn": "Amerika, Avrupa, Afrika, Asya"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Penumbral",
+        "date": "2027-07-18",
+        "visibleIn": "doğu Afrika, Asya, Avustralya, Pasifik"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Penumbral",
+        "date": "2027-08-16",
+        "visibleIn": "Pasifik, Amerika"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Annular",
+        "date": "2028-01-26",
+        "visibleIn": "Güney Amerika, Atlantik Okyanusu, Afrika"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Total",
+        "date": "2028-07-22",
+        "visibleIn": "Christmas Adası, Cocos Adaları, Avustralya, Yeni Zelanda"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Partial",
+        "date": "2028-01-11",
+        "visibleIn": "Amerika, Avrupa, Afrika"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Partial",
+        "date": "2028-07-06",
+        "visibleIn": "Avrupa, Afrika, Asya, Avustralya"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2028-12-31",
+        "visibleIn": "Avrupa, Afrika, Asya, Avustralya, Pasifik"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2029-01-14",
+        "visibleIn": "Kuzey Amerika, Orta Amerika"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2029-06-12",
+        "visibleIn": "Arktik, İskandinavya, Alaska, kuzey Asya, kuzey Kanada"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2029-07-11",
+        "visibleIn": "güney Şili, güney Arjantin"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Partial",
+        "date": "2029-12-05",
+        "visibleIn": "güney Arjantin, güney Şili, Antarktika"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2029-06-25",
+        "visibleIn": "Amerika, Avrupa, Afrika, Orta Doğu"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Total",
+        "date": "2029-12-20",
+        "visibleIn": "Amerika, Avrupa, Afrika, Asya"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Annular",
+        "date": "2030-06-01",
+        "visibleIn": "Avrupa, kuzey Afrika, Orta Doğu, Asya, Arktik, Alaska"
+      },
+      {
+        "solar": "Solar Eclipse",
+        "type": "Total",
+        "date": "2030-11-25",
+        "visibleIn": "güney Afrika, güney Hint Okyanusu, Doğu Hint Adaları, Avustralya, Antarktika"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Partial",
+        "date": "2030-06-15",
+        "visibleIn": "Avrupa, Afrika, Asya, Avustralya"
+      },
+      {
+        "lunar": "Lunar Eclipse",
+        "type": "Penumbral",
+        "date": "2030-12-09",
+        "visibleIn": "Amerika, Avrupa, Afrika, Asya"
+      }
+    ]
+  }

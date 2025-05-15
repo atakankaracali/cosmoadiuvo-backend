@@ -6,6 +6,7 @@ import rateLimit from 'express-rate-limit';
 import moonRoutes from './moonRoutes.js';
 import horoscopeRoute from './scripts/horoscopeRoute.js';
 import retroRoute from './scripts/retroRoute.js';
+import eclipseRoute from './scripts/eclipseRoute.js';
 
 dotenv.config();
 const app = express();
@@ -24,6 +25,7 @@ app.use(limiter);
 app.use('/api', moonRoutes);
 app.use('/api', horoscopeRoute);
 app.use('/api', retroRoute);
+app.use('/api', eclipseRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
