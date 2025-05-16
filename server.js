@@ -11,6 +11,7 @@ import visitRoute from "./routes/visitRoute.js";
 
 dotenv.config();
 const app = express();
+
 app.use(cors());
 app.use(helmet());
 app.use(express.json());
@@ -18,16 +19,17 @@ app.use(express.json());
 const limiter = rateLimit({
   windowMs: (parseInt(process.env.RATE_LIMIT_WINDOW) || 15) * 60 * 1000,
   max: parseInt(process.env.RATE_LIMIT_MAX) || 100,
-  keyGenerator: (req) => req.headers["x-forwarded-for"] || req.socket.remoteAddress || "unknown",
+  keyGenerator: (req) =>
+    req.headers["x-forwarded-for"] || req.socket.remoteAddress || "unknown",
   message: "⏳ Too many requests, please slow down.",
 });
 app.use(limiter);
 
-app.use('/api', moonRoutes);
-app.use('/api', horoscopeRoute);
-app.use('/api', retroRoute);
-app.use('/api', eclipseRoute);
-app.use("/api/increment-visit", visitRoute);
+app.use('/api/moon', moonRoutes);
+app.use('/api/horoscope', horoscopeRoute);
+app.use('/api/retro', retroRoute);
+app.use('/api/eclipse', eclipseRoute);
+app.use('/api/visit', visitRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

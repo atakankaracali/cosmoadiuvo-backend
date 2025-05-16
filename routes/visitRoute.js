@@ -21,4 +21,17 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.get("/", async (req, res) => {
+  const ref = db.collection("siteStats").doc("visitCount");
+
+  try {
+    const doc = await ref.get();
+    const count = doc.exists ? doc.data().count : 0;
+    res.json({ count });
+  } catch (err) {
+    console.error("Failed to fetch visit count:", err);
+    res.status(500).json({ error: "Fetch failed." });
+  }
+});
+
 export default router;
