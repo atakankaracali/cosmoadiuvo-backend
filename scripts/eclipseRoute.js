@@ -3,7 +3,7 @@ import eclipseData from '../data/eclipse-2025-2030.json' assert { type: 'json' }
 
 const router = express.Router();
 
-router.get('/eclipses', (req, res) => {
+router.get('/eclipse', (req, res) => {
   res.json(eclipseData);
 });
 
