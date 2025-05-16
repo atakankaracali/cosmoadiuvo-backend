@@ -5,7 +5,7 @@ import { logToFile } from "../utils/logUtils.js";
 
 const router = express.Router();
 
-router.post("/horoscope", async (req, res) => {
+router.post("/", async (req, res) => {
     const { sign, date, lang } = req.body;
     const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress || "unknown";
     const ua = req.headers["user-agent"] || "unknown";

@@ -4,7 +4,7 @@ import path from 'path';
 
 const router = express.Router();
 
-router.get('/moon', (req, res) => {
+router.get('/', (req, res) => {
   try {
     const filePath = path.resolve('./data/moon_data_2025_daily.json');
     const rawData = fs.readFileSync(filePath, 'utf-8');
@@ -16,7 +16,7 @@ router.get('/moon', (req, res) => {
   }
 });
 
-router.get('/moon/month', (req, res) => {
+router.get('/month', (req, res) => {
   const { year, month } = req.query;
 
   if (!year || !month) {

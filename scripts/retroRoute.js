@@ -3,7 +3,7 @@ import retroData from '../data/retroData.json' assert { type: 'json' };
 
 const router = express.Router();
 
-router.get('/retro', (req, res) => {
+router.get('/', (req, res) => {
   res.json(retroData);
 });
 
