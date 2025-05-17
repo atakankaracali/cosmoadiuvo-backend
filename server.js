@@ -3,16 +3,34 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
+
 import moonRoutes from './moonRoutes.js';
 import horoscopeRoute from './scripts/horoscopeRoute.js';
 import retroRoute from './scripts/retroRoute.js';
 import eclipseRoute from './scripts/eclipseRoute.js';
-import visitRoute from "./routes/visitRoute.js";
+import visitRoute from './routes/visitRoute.js';
 
 dotenv.config();
 const app = express();
 
-app.use(cors());
+const allowedOrigins = [
+  "https://cosmoadiuvo.com",
+  "https://www.cosmoadiuvo.com",
+  "http://localhost:5173"
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST"],
+  credentials: false
+}));
+
 app.use(helmet());
 app.use(express.json());
 
