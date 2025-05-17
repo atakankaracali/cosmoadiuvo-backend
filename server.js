@@ -19,6 +19,8 @@ const allowedOrigins = [
   "http://localhost:5173"
 ];
 
+app.options('*', cors());
+
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -27,7 +29,8 @@ app.use(cors({
       callback(new Error("Not allowed by CORS"));
     }
   },
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: false
 }));
 
