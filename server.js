@@ -13,6 +13,7 @@ import visitRoute from './routes/visitRoute.js';
 dotenv.config();
 const app = express();
 
+
 const allowedOrigins = [
   "https://cosmoadiuvo.com",
   "https://www.cosmoadiuvo.com",
